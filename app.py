@@ -72,3 +72,37 @@ def evaluate_model(model, X_eval, y_eval):
 meta = load_meta()
 st.title("Classification Model Evaluator")
 st.write("Dataset used for training: " + meta["dataset_name"])
+
+# sidebar for model dropdown and CSV upload
+st.sidebar.header("Controls")
+model_name = st.sidebar.selectbox("Select a model", list(meta["model_files"].keys()))
+uploaded = st.sidebar.file_uploader("Upload test data (CSV)", type=["csv"])
+
+# use the uploaded file, otherwise the bundled test_data.csv
+if uploaded is not None:
+    test_df = pd.read_csv(uploaded)
+    st.caption("Using the uploaded file: " + uploaded.name)
+else:
+    test_df = pd.read_csv(SAMPLE_CSV)
+    st.caption("No file uploaded, so the bundled test_data.csv is used.")
+
+# validate that the csv must have every feature and the target column
+needed = meta["feature_names"] + [meta["target_col"]]
+missing = [c for c in needed if c not in test_df.columns]
+if missing:
+    st.error("The CSV is missing these columns: " + ", ".join(missing))
+    st.stop()
+
+test_df = test_df.dropna(subset=needed)
+X_eval = test_df[meta["feature_names"]]
+y_true = test_df[meta["target_col"]]
+
+model = load_model(meta["model_files"][model_name])
+
+# target values must be classes the model knows
+unknown = set(y_true.unique()) - set(model.classes_)
+if unknown:
+    st.error("The target column has values the model has not seen: " + str(unknown))
+    st.stop()
+
+metrics, y_pred = evaluate_model(model, X_eval, y_true)
