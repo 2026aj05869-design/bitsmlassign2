@@ -106,3 +106,26 @@ if unknown:
     st.stop()
 
 metrics, y_pred = evaluate_model(model, X_eval, y_true)
+
+# evaluation metrics
+st.subheader("Evaluation metrics: " + model_name)
+for column, (label, value) in zip(st.columns(len(metrics)), metrics.items()):
+    column.metric(label, "N/A" if np.isnan(value) else "{:.4f}".format(value))
+
+# confusion matrix and classification report
+left, right = st.columns(2)
+with left:
+    st.subheader("Confusion matrix")
+    fig, ax = plt.subplots(figsize=(5, 4))
+    ConfusionMatrixDisplay.from_predictions(y_true, y_pred, labels=model.classes_,
+                                            ax=ax, colorbar=False)
+    st.pyplot(fig)
+    plt.close(fig)
+with right:
+    st.subheader("Classification report")
+    report = classification_report(y_true, y_pred, labels=model.classes_,
+                                   output_dict=True, zero_division=0)
+    st.dataframe(pd.DataFrame(report).transpose().round(4))
+
+with st.expander("Preview of the test data"):
+    st.dataframe(test_df.head(10))
