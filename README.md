@@ -90,6 +90,17 @@ The dataset satisfies the assignment requirement of having at least 12 features 
 | Naive Bayes | Naive Bayes achieved an Accuracy of 0.9386 and AUC of 0.9838. Its performance was better than Decision Tree in Accuracy, Recall, F1 Score and MCC, but lower than Logistic Regression, KNN and Support Vector Machine in overall performance. |
 | Support Vector Machine | Support Vector Machine performed very well with an Accuracy of 0.9649. It achieved the highest AUC of 0.9954 and highest Precision of 0.9857 among all five models, showing very good class separation and accurate positive predictions. |
 
+
+### Overall Observation
+
+Logistic Regression provided the best overall performance with the highest Accuracy of 0.9737, highest Recall of 0.9861 and highest MCC of 0.9433.
+
+Support Vector Machine also performed very well and achieved the highest AUC of 0.9954 and highest Precision of 0.9857.
+
+KNN achieved the highest F1 Score of 0.9861 and also showed good overall performance.
+
+**Based on the overall comparison of all six evaluation metrics, Logistic Regression was selected as the best-performing model for this test dataset.**
+
 ## 6. Streamlit Application
 | Streamlit Application | [2026aj05869-Streamlit](https://bitsmlassign2-jqvmjv2ts4af4atbkmrs4d.streamlit.app/) |
 
