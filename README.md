@@ -67,7 +67,7 @@ The dataset satisfies the assignment requirement of having at least 12 features 
 | Item | Link |
 |---|---|
 | GitHub Repository | [2026aj05869-Git](https://github.com/2026aj05869-design/bitsmlassign2/) |
-| Streamlit Application | [2026aj05869-URL](https://bitsmlassign2-jqvmjv2ts4af4atbkmrs4d.streamlit.app/) |
+| Streamlit Application | [2026aj05869-Streamlit](https://bitsmlassign2-jqvmjv2ts4af4atbkmrs4d.streamlit.app/) |
 
 
 ## 4. Models used and their Performance Metrics Comparison
@@ -91,7 +91,7 @@ The dataset satisfies the assignment requirement of having at least 12 features 
 | Support Vector Machine | ... |
 
 ## 6. Streamlit Application
-| Streamlit Application | [2026aj05869-URL](https://bitsmlassign2-jqvmjv2ts4af4atbkmrs4d.streamlit.app/) |
+| Streamlit Application | [2026aj05869-Streamlit](https://bitsmlassign2-jqvmjv2ts4af4atbkmrs4d.streamlit.app/) |
 ...
 
 ## 7. Installation and Setup
