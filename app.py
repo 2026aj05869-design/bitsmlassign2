@@ -11,13 +11,13 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-# importing required evaluation metric fuctions required for different models
+# importing evaluation metrics required to evaluate classification models
 from sklearn.metrics import (accuracy_score, classification_report,
                              ConfusionMatrixDisplay, f1_score,
                              matthews_corrcoef, precision_score,
                              recall_score, roc_auc_score)
 
-# folder of this file (falls back to the working folder if __file__ is missing)
+# defining paths for the model folder and default test data
 try:
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 except NameError:
@@ -30,19 +30,19 @@ st.set_page_config(page_title="Classification Model Evaluator", layout="wide")
 
 @st.cache_data
 def load_meta():
-    # feature names, target name and model file names
+    # loading dataset details, feature names, target column and model file names
     with open(os.path.join(MODEL_DIR, "meta.json"), "r") as f:
         return json.load(f)
 
 
 @st.cache_resource
 def load_model(file_name):
-    # load a saved model (no training here)
+    # loading the selected saved model without retraining it
     return joblib.load(os.path.join(MODEL_DIR, file_name))
 
 
 def evaluate_model(model, X_eval, y_eval):
-    # same metric calculation as in the notebook
+    # generating predictions and probabilities for the test data
     classes = model.classes_
     y_pred = model.predict(X_eval)
     y_proba = model.predict_proba(X_eval)
@@ -73,12 +73,12 @@ meta = load_meta()
 st.title("Classification Model Evaluator")
 st.write("Dataset used for training: " + meta["dataset_name"])
 
-# sidebar for model dropdown and CSV upload
+# creating sidebar controls for model selection and test CSV upload
 st.sidebar.header("Controls")
 model_name = st.sidebar.selectbox("Select a model", list(meta["model_files"].keys()))
 uploaded = st.sidebar.file_uploader("Upload test data (CSV)", type=["csv"])
 
-# use the uploaded file, otherwise the bundled test_data.csv
+# Using uploaded test data when provided; otherwise using the bundled test_data.csv file
 if uploaded is not None:
     test_df = pd.read_csv(uploaded)
     st.caption("Using the uploaded file: " + uploaded.name)
@@ -86,7 +86,7 @@ else:
     test_df = pd.read_csv(SAMPLE_CSV)
     st.caption("No file uploaded, so the bundled test_data.csv is used.")
 
-# validate that the csv must have every feature and the target column
+# Checking whether all required features and the target column are present
 needed = meta["feature_names"] + [meta["target_col"]]
 missing = [c for c in needed if c not in test_df.columns]
 if missing:
@@ -99,7 +99,7 @@ y_true = test_df[meta["target_col"]]
 
 model = load_model(meta["model_files"][model_name])
 
-# target values must be classes the model knows
+# Checking whether target values in the test data are known to the model
 unknown = set(y_true.unique()) - set(model.classes_)
 if unknown:
     st.error("The target column has values the model has not seen: " + str(unknown))
@@ -107,12 +107,12 @@ if unknown:
 
 metrics, y_pred = evaluate_model(model, X_eval, y_true)
 
-# evaluation metrics
+# Displaying the evaluation metrics
 st.subheader("Evaluation metrics: " + model_name)
 for column, (label, value) in zip(st.columns(len(metrics)), metrics.items()):
     column.metric(label, "N/A" if np.isnan(value) else "{:.4f}".format(value))
 
-# confusion matrix and classification report
+# Displaying confusion matrix and classification report side by side
 left, right = st.columns(2)
 with left:
     st.subheader("Confusion matrix")
