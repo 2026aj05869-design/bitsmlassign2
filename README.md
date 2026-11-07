@@ -1,4 +1,4 @@
-<img width="3555" height="2268" alt="image" src="https://github.com/user-attachments/assets/56748fb8-22b0-4cc3-bff4-0596b4f04c64" />**Classification Models Evaluation Using Streamlit**
+**Classification Models Evaluation Using Streamlit**
 
 **1. Problem Statement**
 
@@ -62,7 +62,15 @@ Target value	Class
 1	Benign
 The dataset satisfies the assignment requirement of having at least 12 features and 500 instances.
 
-## 6. Model Performance Comparison
+## 3. Project Links
+
+| Item | Link |
+|---|---|
+| GitHub Repository | [YOUR_URL](https://github.com/2026aj05869-design/bitsmlassign2/) |
+| Streamlit Application | [YOUR_URL](https://bitsmlassign2-jqvmjv2ts4af4atbkmrs4d.streamlit.app/) |
+
+
+## 4. Models used and their Performance Metrics Comparison
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 Score | MCC |
 |---|---:|---:|---:|---:|---:|---:|
@@ -72,7 +80,7 @@ The dataset satisfies the assignment requirement of having at least 12 features 
 | Naive Bayes | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX |
 | Support Vector Machine | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX |
 
-## 7. Model Performance Observations
+## 5. Model Performance Observations
 
 | ML Model Name | Observation |
 |---|---|
@@ -82,8 +90,8 @@ The dataset satisfies the assignment requirement of having at least 12 features 
 | Naive Bayes | ... |
 | Support Vector Machine | ... |
 
-## 8. Streamlit Application
-
+## 6. Streamlit Application
+| Streamlit Application | [YOUR_URL](https://bitsmlassign2-jqvmjv2ts4af4atbkmrs4d.streamlit.app/) |
 ...
 
 ## 9. Installation and Setup
@@ -97,13 +105,6 @@ The dataset satisfies the assignment requirement of having at least 12 features 
 ## 11. Running the Streamlit Application
 
 ...
-
-## 12. Project Links
-
-| Item | Link |
-|---|---|
-| GitHub Repository | YOUR_URL |
-| Streamlit Application | YOUR_URL |
 
 This compares classification models for dataset and computes metrics for each.
 1. GITHUB_LINK https://github.com/2026aj05869-design/bitsmlassign2.
