@@ -92,7 +92,6 @@ The dataset satisfies the assignment requirement of having at least 12 features 
 
 ## 6. Streamlit Application
 | Streamlit Application | [2026aj05869-Streamlit](https://bitsmlassign2-jqvmjv2ts4af4atbkmrs4d.streamlit.app/) |
-...
 
 ## 7. Installation and Setup
 
