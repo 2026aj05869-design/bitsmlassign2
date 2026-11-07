@@ -45,16 +45,17 @@ The input features are calculated from digitized images of breast mass samples. 
 
 Some of the important features are:
 
-Radius
-Texture
-Perimeter
-Area
-Smoothness
-Compactness
-Concavity
-Concave points
-Symmetry
-Fractal dimension
+Radius,
+Texture,
+Perimeter,
+Area,
+Smoothness,
+Compactness,
+Concavity,
+Concave points,
+Symmetry,
+Fractal dimension,
+
 The target variable contains two classes:
 
 Target value	Class
