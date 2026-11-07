@@ -66,19 +66,19 @@ The dataset satisfies the assignment requirement of having at least 12 features 
 
 | Item | Link |
 |---|---|
-| GitHub Repository | [YOUR_URL](https://github.com/2026aj05869-design/bitsmlassign2/) |
-| Streamlit Application | [YOUR_URL](https://bitsmlassign2-jqvmjv2ts4af4atbkmrs4d.streamlit.app/) |
+| GitHub Repository | [2026aj05869-Git](https://github.com/2026aj05869-design/bitsmlassign2/) |
+| Streamlit Application | [2026aj05869-URL](https://bitsmlassign2-jqvmjv2ts4af4atbkmrs4d.streamlit.app/) |
 
 
 ## 4. Models used and their Performance Metrics Comparison
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 Score | MCC |
 |---|---:|---:|---:|---:|---:|---:|
-| Logistic Regression | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX |
-| Decision Tree | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX |
-| KNN | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX |
-| Naive Bayes | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX |
-| Support Vector Machine | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX |
+| Logistic Regression | 0.9737 | 0.9927 | 0.9726 | 0.9861 | 0.0.9793 | 0.9433 |
+| Decision Tree | 0.9298 | 0.9395 | 0.9848 | 0.9028 | 0.9420 | 0.8588 |
+| KNN | 0.9649 | 0.9926 | 0.9595 | 0.9726 | 0.9861 | 0.9245 |
+| Naive Bayes | 0.9386 | 0.9838 | 0.9577 | 0.9444 | 0.9510 | 0.8689 |
+| Support Vector Machine | 0.9649 | 0.9954 | 0.9857 | 0.9583 | 0.9718 | 0.9260 |
 
 ## 5. Model Performance Observations
 
@@ -91,24 +91,21 @@ The dataset satisfies the assignment requirement of having at least 12 features 
 | Support Vector Machine | ... |
 
 ## 6. Streamlit Application
-| Streamlit Application | [YOUR_URL](https://bitsmlassign2-jqvmjv2ts4af4atbkmrs4d.streamlit.app/) |
+| Streamlit Application | [2026aj05869-URL](https://bitsmlassign2-jqvmjv2ts4af4atbkmrs4d.streamlit.app/) |
 ...
 
-## 9. Installation and Setup
-
-...
-
-## 10. Running the Training Script
+## 7. Installation and Setup
 
 ...
 
-## 11. Running the Streamlit Application
+## 8. Running the Training Script
 
 ...
 
-This compares classification models for dataset and computes metrics for each.
-1. GITHUB_LINK https://github.com/2026aj05869-design/bitsmlassign2.
-2. STREAMLIT_LINK https://bitsmlassign2-jqvmjv2ts4af4atbkmrs4d.streamlit.app/
-3. Observations per model
+## 9. Running the Streamlit Application
+
+...
+
+
    
 
