@@ -60,7 +60,6 @@ The target variable contains two classes:
 Target value	Class
 0	Malignant
 1	Benign
-The dataset satisfies the assignment requirement of having at least 12 features and 500 instances.
 
 ## 3. Project Links
 
@@ -103,18 +102,6 @@ KNN achieved the highest F1 Score of 0.9861 and also showed good overall perform
 
 ## 6. Streamlit Application
 | Streamlit Application | [2026aj05869-Streamlit](https://bitsmlassign2-jqvmjv2ts4af4atbkmrs4d.streamlit.app/) |
-
-## 7. Installation and Setup
-
-...
-
-## 8. Running the Training Script
-
-...
-
-## 9. Running the Streamlit Application
-
-...
 
 
    
