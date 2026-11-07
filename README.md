@@ -84,11 +84,11 @@ The dataset satisfies the assignment requirement of having at least 12 features 
 
 | ML Model Name | Observation |
 |---|---|
-| Logistic Regression | ... |
-| Decision Tree | ... |
-| KNN | ... |
-| Naive Bayes | ... |
-| Support Vector Machine | ... |
+| Logistic Regression | Logistic Regression performed very well with the highest Accuracy of 0.9737 and Recall of 0.9861. It also achieved an AUC of 0.9927 and MCC of 0.9433, showing strong and balanced performance on the test dataset. |
+| Decision Tree | Decision Tree achieved an Accuracy of 0.9298, which is the lowest among the five models. It provided the second-highest Precision of 0.9848, but its lower Recall of 0.9028 and MCC of 0.8588 indicate that its overall performance was lower compared to the other models. |
+| KNN | KNN performed well with an Accuracy of 0.9649 and AUC of 0.9926. It achieved the highest F1 Score of 0.9861, showing a good balance between Precision and Recall. Feature scaling was applied because KNN uses distance between data points for classification. |
+| Naive Bayes | Naive Bayes achieved an Accuracy of 0.9386 and AUC of 0.9838. Its performance was better than Decision Tree in Accuracy, Recall, F1 Score and MCC, but lower than Logistic Regression, KNN and Support Vector Machine in overall performance. |
+| Support Vector Machine | Support Vector Machine performed very well with an Accuracy of 0.9649. It achieved the highest AUC of 0.9954 and highest Precision of 0.9857 among all five models, showing very good class separation and accurate positive predictions. |
 
 ## 6. Streamlit Application
 | Streamlit Application | [2026aj05869-Streamlit](https://bitsmlassign2-jqvmjv2ts4af4atbkmrs4d.streamlit.app/) |
