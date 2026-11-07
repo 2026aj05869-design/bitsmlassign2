@@ -89,7 +89,7 @@ Target value	Class
 | KNN | KNN performed well with an Accuracy of 0.9649 and AUC of 0.9926. It achieved the joint-highest Recall of 0.9861 and F1 Score of 0.9726, showing a good balance between Precision and Recall. Feature scaling was applied because KNN uses distance between data points for classification. |
 | Naive Bayes | Naive Bayes achieved an Accuracy of 0.9386 and AUC of 0.9838. Its performance was better than Decision Tree in Accuracy, Recall, F1 Score and MCC, but lower than Logistic Regression, KNN and Support Vector Machine in overall performance. |
 | Support Vector Machine | Support Vector Machine performed very well with an Accuracy of 0.9649. It achieved the highest AUC of 0.9954 and highest Precision of 0.9857 among all five models, showing very good class separation and accurate positive predictions. |
-| Overall Winner for the Dataset | **Logistic Regression was selected as the best-performing model because it achieved the highest Accuracy of 0.9737 and highest MCC of 0.9433, while attaining the joint-highest Recall of 0.9861. Considering all six evaluation metrics, it provided the strongest overall balance of performance.**|
+| **Overall Winner for the Dataset** | **Logistic Regression was selected as the best-performing model because it achieved the highest Accuracy of 0.9737 and highest MCC of 0.9433, while attaining the joint-highest Recall of 0.9861. Considering all six evaluation metrics, it provided the strongest overall balance of performance.**|
 
 
 **Based on the overall comparison of all six evaluation metrics, Logistic Regression was selected as the best-performing model for this test dataset.**
