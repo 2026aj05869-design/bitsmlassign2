@@ -1,5 +1,113 @@
-# bitsmlassign2
+<img width="3555" height="2268" alt="image" src="https://github.com/user-attachments/assets/56748fb8-22b0-4cc3-bff4-0596b4f04c64" />**Classification Models Evaluation Using Streamlit**
+
+**1. Problem Statement**
+
+The objective of this project is to implement and compare five classical machine learning classification models using the same dataset.
+
+The following classification models are implemented:
+1. Logistic Regression
+2. Decision Tree Classifier
+3. K-Nearest Neighbors Classifier
+4. Gaussian Naive Bayes Classifier
+5. Support Vector Machine
+
+The performance of each model is evaluated using the following metrics:
+1. Accuracy
+2. AUC Score
+3. Precision
+4. Recall
+5. F1 Score
+6. Matthews Correlation Coefficient (MCC)
+
+An interactive Streamlit application is also developed to evaluate the saved models using uploaded test data. The application loads the already trained models and does not retrain them on the uploaded test data.
+
+**2. Dataset Description**
+
+The **Breast Cancer Wisconsin (Diagnostic) dataset** is used for this classification project and the dataset is available through the scikit-learn library and was originally obtained from the UCI Machine Learning Repository.
+
+**Dataset Details**
+
+## Dataset Details
+
+| Property | Description |
+|---|---|
+| Dataset Name | Breast Cancer Wisconsin (Diagnostic) |
+| Dataset Source | UCI Machine Learning Repository through scikit-learn |
+| Problem Type | Binary Classification |
+| Number of Instances | 569 |
+| Number of Features | 30 |
+| Target Column | `target` |
+| Target Classes | Malignant and Benign |
+| Problem Statement | Binary Classification |
+| Train-Test Split | 80% Training and 20% Testing |
+
+The input features are calculated from digitized images of breast mass samples. They describe characteristics of the cell nuclei present in the images.
+
+Some of the important features are:
+
+Radius
+Texture
+Perimeter
+Area
+Smoothness
+Compactness
+Concavity
+Concave points
+Symmetry
+Fractal dimension
+The target variable contains two classes:
+
+Target value	Class
+0	Malignant
+1	Benign
+The dataset satisfies the assignment requirement of having at least 12 features and 500 instances.
+
+## 6. Model Performance Comparison
+
+| ML Model Name | Accuracy | AUC | Precision | Recall | F1 Score | MCC |
+|---|---:|---:|---:|---:|---:|---:|
+| Logistic Regression | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX |
+| Decision Tree | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX |
+| KNN | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX |
+| Naive Bayes | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX |
+| Support Vector Machine | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX | 0.XXXX |
+
+## 7. Model Performance Observations
+
+| ML Model Name | Observation |
+|---|---|
+| Logistic Regression | ... |
+| Decision Tree | ... |
+| KNN | ... |
+| Naive Bayes | ... |
+| Support Vector Machine | ... |
+
+## 8. Streamlit Application
+
+...
+
+## 9. Installation and Setup
+
+...
+
+## 10. Running the Training Script
+
+...
+
+## 11. Running the Streamlit Application
+
+...
+
+## 12. Project Links
+
+| Item | Link |
+|---|---|
+| GitHub Repository | YOUR_URL |
+| Streamlit Application | YOUR_URL |
+
 This compares classification models for dataset and computes metrics for each.
 1. GITHUB_LINK https://github.com/2026aj05869-design/bitsmlassign2.
 2. STREAMLIT_LINK https://bitsmlassign2-jqvmjv2ts4af4atbkmrs4d.streamlit.app/
 3. Observations per model
+   
+
